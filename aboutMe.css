@@ -1,0 +1,52 @@
+:root {
+  --aboutMeSpacing: 25vh;
+}
+
+.about-me {
+  margin: 5vw;
+  display: flex;
+  padding: var(--aboutMeSpacing) 0;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.about-photo {
+  max-width: 40%;
+  border-radius: 2rem;
+}
+
+button {
+  background: var(--onPrimaryColor);
+  border: none;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: var(--onHoverColor);
+}
+
+.about-me-button {
+  border-radius: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 0.375em 1.125em;
+  background: hsl(190deg, 30%, 15%);
+  color: hsl(190deg, 10%, 95%);
+}
+
+.about-me-button:hover {
+  background: hsl(190, 14%, 36%);
+  color: hsl(201, 47%, 21%);
+}
+
+@media (max-width: 600px) {
+  .about-me {
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+  }
+  .about-photo {
+    max-width: revert;
+    width: 100%;
+  }
+}

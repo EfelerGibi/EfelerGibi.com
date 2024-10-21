@@ -1,0 +1,76 @@
+:root {
+  --cameraBgPadding: 2em;
+  --cameraSpacing: 25vh;
+}
+
+.camera-back {
+  width: min(1000px, 100%);
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  padding-top: var(--cameraSpacing);
+  padding-bottom: var(--cameraSpacing);
+}
+
+.camera-back > *:not(.camera-back-bg) {
+  position: absolute;
+}
+
+.camera-back-bg {
+  width: min(1000px, 100%);
+
+  display: block;
+  padding: var(--cameraBgPadding);
+}
+
+.carousel {
+  top: 36%;
+  left: 15%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 50%;
+}
+
+.carousel-slide {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.carousel-slide-bg {
+  left: 0;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+/* .carousel-button {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 7vw;
+    cursor: pointer;
+    outline: none;
+  } */
+
+.carousel-buttons {
+  position: absolute;
+  top: 56%;
+  right: calc(var(--cameraBgPadding) + 11%);
+}
+
+.carousel-buttons > button {
+  font-size: 5vw;
+}

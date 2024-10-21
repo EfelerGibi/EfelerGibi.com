@@ -1,0 +1,50 @@
+:root {
+  --projectsSpacing: 25vh;
+}
+
+.maker-projects {
+  padding: var(--projectsSpacing) 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+.projects-card {
+  margin-inline: 1rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4rem;
+  padding: 4rem;
+  background: var(--onPrimaryColor);
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4rem;
+}
+
+.project-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.project-img {
+  border-radius: 2rem;
+  max-width: 15rem;
+}
+
+@media (min-width: 1200px) {
+  .projects-card {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-card .project-section:last-child {
+    grid-column-start: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-section {
+    flex-wrap: wrap;
+  }
+  .project-img {
+    max-width: 100%;
+  }
+}

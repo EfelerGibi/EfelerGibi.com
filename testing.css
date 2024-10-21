@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(43, 43, 43);
+  color: rgb(165, 165, 165);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+}
+.cameraSensor {
+  position: relative;
+  /* width: min-content; */
+  display: flex;
+  align-items: center;
+}
+/* 
+.cameraSensor > *:not(.cameraImage) {
+  position: absolute;
+} */
+
+.titleName {
+  background-image: url("./img/image (9).jpg");
+  background-size: cover;
+  width: 100%;
+
+  z-index: 1;
+  line-height: 1;
+  right: 30%;
+  font-size: 6vw;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+
+.cameraImage {
+  width: 100%;
+  display: block;
+}
+
+.aboutMe {
+  margin: 10em;
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+}
+/* 
+  .aboutMeText {
+    margin-left: 5em;
+    margin-right: 5em;
+  } */
+
+.aboutPhoto {
+  height: 20em;
+}
